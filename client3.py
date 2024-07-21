@@ -32,9 +32,6 @@ N = 500
 def getDataPoint(quote):
     """ Produce all the needed values to generate a datapoint """
     """ ------------- Update this function ------------- """
-
-    #TODO: function should return correct tuple of stock name, bid_price, ask_price, and price. Price = average of bid and ask
-
     stock = quote['stock']
     bid_price = float(quote['top_bid']['price'])
     ask_price = float(quote['top_ask']['price'])
@@ -45,8 +42,6 @@ def getDataPoint(quote):
 def getRatio(price_a, price_b):
     """ Get ratio of price_a and price_b """
     """ ------------- Update this function ------------- """
-
-    #TODO return the average of the stock prices 
 
     if price_b == 0:
         return
